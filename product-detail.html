@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title id="pageTitle">Product Details | Deep Pariwar</title>
+  <meta name="description" id="pageDesc" content="Premium food products by Deep Pariwar">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER (UNCHANGED) -->
+<header>
+  <div class="logo">Deep Pariwar</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="distributor.html">Partner</a>
+  </nav>
+</header>
+
+<!-- PRODUCT HERO -->
+<section class="product-hero">
+  <div class="product-image">
+    <img id="productImage" alt="">
+  </div>
+
+  <div class="product-info">
+    <h1 id="productTitle"></h1>
+    <p id="productDesc"></p>
+
+    <h3>Available Pack Sizes</h3>
+    <div class="pack-sizes" id="packSizes"></div>
+
+    <!-- STICKY NUTRITION -->
+    <div class="nutrition-sticky">
+      <h3>Nutritional Information (Per 100g)</h3>
+      <div class="nutrition-grid" id="nutritionGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="why-choose">
+  <div class="why-bg">
+    <div class="why-content">
+      <h2 id="whyTitle"></h2>
+      <ul id="whyPoints"></ul>
+    </div>
+    <div class="why-image">
+      <img id="whyImage">
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES (ANIMATED CAROUSEL) -->
+<section class="advantages">
+  <h2>4 Step Advantage</h2>
+
+  <div class="adv-carousel">
+  <button class="nav prev" onclick="moveAdv(-1)">‹</button>
+
+  <div class="adv-viewport">
+    <div class="adv-track" id="advGrid"></div>
+  </div>
+
+  <button class="nav next" onclick="moveAdv(1)">›</button>
+</div>
+
+
+
+  <div class="dots" id="advDots"></div>
+</section>
+
+<!-- RECIPES SLIDER -->
+<section class="related-recipes">
+  <h2>Wholesome meals you can make</h2>
+
+  <div class="recipe-carousel">
+    <button class="nav prev" onclick="moveRecipe(-1)">‹</button>
+    <div class="recipe-track" id="recipeSlider"></div>
+    <button class="nav next" onclick="moveRecipe(1)">›</button>
+  </div>
+
+  <div class="dots" id="recipeDots"></div>
+
+  <div class="center">
+    <a href="recipes.html" class="btn btn-primary">View All</a>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section class="product-videos">
+  <h2>A look at our advertisements</h2>
+
+  <div class="video-layout">
+    <div class="video-main" id="mainVideo"></div>
+    <div class="video-list" id="videoGrid"></div>
+  </div>
+</section>
+
+<!-- FOOTER (UNCHANGED) -->
+<footer>
+  <div>
+    <h4>Deep Pariwar</h4>
+    <p>Pure Food. Pure Love.</p>
+  </div>
+  <div>
+    <h4>Quick Links</h4>
+    <a href="products.html">Products</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div>
+    <h4>Follow Us</h4>
+    <a href="https://facebook.com/deeppariwar">Facebook</a>
+    <a href="https://instagram.com/deeppariwar">Instagram</a>
+  </div>
+  <div class="footer-bottom">© 2026 Deep Pariwar</div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/91XXXXXXXXXX" class="chat-float">💬</a>
+
+<script src="products-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
