@@ -115,7 +115,7 @@ const products = [
   slug: "sooji",
   title: "Sooji",
   description: "Premium quality sooji with perfect grain size for delicious dishes.",
-  image: "images/Screenshot_2025-08-02_204438-removebg-preview.png",
+  image: "images/Deep Pariwar Sooji.png",
 
   packs: ["500 g"],
 
@@ -127,7 +127,7 @@ const products = [
 
   why: {
     title: "Why Choose Deep Pariwar Sooji?",
-    image: "images/Screenshot_2025-08-02_204438-removebg-preview.png",
+    image: "images/Deep Pariwar Sooji.png",
     points: [
       "Uniform grain size",
       "Light & easy to digest",
