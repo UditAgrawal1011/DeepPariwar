@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title id="blogTitle">Blog | Deep Pariwar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Deep Pariwar</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="distributor.html">Partner</a>
+  </nav>
+</header>
+
+<section class="blog-detail">
+  <div class="container">
+    <h1 id="detailTitle"></h1>
+    <div id="detailContent"></div>
+
+    <br><br>
+    <a href="blogs.html" class="btn btn-primary">Back to Blogs</a>
+  </div>
+</section>
+
+<script src="blogs-data.js"></script>
+<script>
+const params = new URLSearchParams(window.location.search);
+const slug = params.get("slug");
+
+if (slug && typeof blogs !== "undefined") {
+  const blog = blogs.find(b => b.slug === slug);
+
+  if (blog) {
+    document.getElementById("detailTitle").innerText = blog.title;
+    document.getElementById("detailContent").innerHTML = blog.content;
+    document.getElementById("blogTitle").innerText = blog.title + " | Deep Pariwar";
+  }
+}
+</script>
+
+
+<footer>
+  <div>
+    <h4>Deep Pariwar</h4>
+    <p>Pure Food. Pure Love.</p>
+  </div>
+  <div>
+    <h4>Quick Links</h4>
+    <a href="products.html">Products</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div>
+    <h4>Follow Us</h4>
+    <a href="https://facebook.com">Facebook</a>
+    <a href="https://instagram.com/deeppariwar">Instagram</a>
+  </div>
+  <div class="footer-bottom">© 2026 Deep Pariwar</div>
+</footer>
+
+<a href="contact.html" class="chat-float">💬</a>
+
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
